@@ -1,0 +1,17 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <div class="container">
+        <p>Название: {{task.name}}</p>
+        {% if task.description %}
+            <p>Описание: {{task.description}}</p>
+        {% endif %}
+
+    {# Кнопка возвращения на главную страницу #}
+
+    <a href="/task/" class="btn btn-primary">Back</a>
+
+    {# Кнопка возвращения на главную страницу #}
+    </div>
+
+{% endblock %}
